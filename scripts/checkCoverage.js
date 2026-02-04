@@ -10,10 +10,10 @@ if (!fs.existsSync(summaryPath)) {
 const summary = JSON.parse(fs.readFileSync(summaryPath, 'utf8'));
 
 const thresholds = {
-  statements: 80,
-  branches: 75,
-  lines: 80,
-  functions: 80
+  statements: 85,
+  branches: 80,
+  lines: 85,
+  functions: 85
 };
 
 const failures = [];
