@@ -1,20 +1,22 @@
+@import '../styles/brand.css';
+
 .barMenu {
   position: absolute;
   top: 20px;
   right: 20px;
   width: 280px;
   background: rgba(0, 0, 0, 0.78);
-  border: 2px solid gold;
+  border: 2px solid var(--brand-gold);
   border-radius: 12px;
   padding: 16px;
-  color: #fff;
+  color: var(--brand-text);
   font-family: "Playfair Display", serif;
   backdrop-filter: blur(8px);
 }
 
 .title {
   text-align: center;
-  color: gold;
+  color: var(--brand-gold);
   margin-bottom: 12px;
   font-size: 1.2rem;
 }
@@ -24,7 +26,7 @@
 }
 
 .sectionTitle {
-  color: #ffb347;
+  color: var(--brand-accent);
   margin: 6px 0;
   font-size: 1rem;
 }
@@ -39,7 +41,7 @@
   display: flex;
   justify-content: space-between;
   padding: 6px 0;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+  border-bottom: 1px solid var(--brand-muted);
 }
 
 .itemName {
@@ -47,6 +49,6 @@
 }
 
 .itemCoins {
-  color: #ffd27a;
+  color: var(--brand-gold);
   font-weight: 600;
 }

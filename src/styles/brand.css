@@ -1,0 +1,9 @@
+:root{
+  --brand-bg: #111;
+  --brand-gold: #ffd27a;
+  --brand-accent: #ff9a3c;
+  --brand-muted: rgba(255,255,255,0.06);
+  --brand-text: #ffffff;
+}
+
+body{background:var(--brand-bg);color:var(--brand-text)}
