@@ -14,8 +14,18 @@
     "test": "vitest"
   },
   "vitest": {
-    "setupFiles": ["src/setupTests.ts"]
+    "setupFiles": ["src/setupTests.ts"],
+    "coverage": {
+      "provider": "c8",
+      "reporter": ["text","lcov"],
+      "reportsDirectory": "coverage",
+      "all": true
+    }
   },
+  "scripts": {
+    "test:coverage": "vitest run --coverage --run",
+    "test": "vitest"
+  ,
   "dependencies": {
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
