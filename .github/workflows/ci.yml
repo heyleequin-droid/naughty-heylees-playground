@@ -24,6 +24,10 @@ jobs:
         run: npm run build
       - name: Run unit tests with coverage
         run: npx vitest run --coverage --run
+      - name: Run Playwright visual tests
+        run: |
+          npx playwright install --with-deps
+          npx playwright test --reporter=list
       - name: Upload coverage report
         uses: actions/upload-artifact@v4
         with:

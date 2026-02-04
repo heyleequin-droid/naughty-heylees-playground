@@ -102,6 +102,29 @@ CI runs tests with coverage and will upload coverage artifacts. If you want Code
 
 Coverage thresholds are enforced by `scripts/checkCoverage.js` (defaults: statements/lines/functions 85%, branches 80%). Edit `scripts/checkCoverage.js` to change thresholds.
 
+### Visual regression tests
+
+This repo includes a Playwright visual regression test that snapshots `public/welcome.html` and compares it to a committed baseline image.
+
+How it works:
+- The test runs `npx playwright test` (CI runs it during the build). Playwright starts a temporary static server (uses `python3 -m http.server --directory public 8000`) and compares screenshots.
+- If the screenshot differs from the baseline (`tests/visual/__snapshots__/welcome.png`), the test fails.
+
+How to set up locally:
+
+```bash
+# install deps
+npm install
+# install Playwright browsers (required the first time)
+npx playwright install --with-deps
+# create/update baseline snapshot locally (run once to capture current appearance)
+npm run test:visual:update
+# run comparison tests
+npm run test:visual
+```
+
+If the UI changes intentionally and you want to accept the new look, run `npm run test:visual:update` to update the baseline snapshot and commit the updated snapshot file.
+
 ### Run the Vite demo
 
 This repo now includes a tiny Vite + React demo. To run it locally:
