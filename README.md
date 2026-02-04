@@ -57,6 +57,17 @@ python3 -m http.server --directory public 8000
 
 Or use `npx serve public`.
 
+### Welcome page
+
+You can preview a simple welcome page at `public/welcome.html` (it uses `public/images/placeholder.svg` by default). To open it locally:
+
+```bash
+python3 -m http.server --directory public 8000
+# then open http://localhost:8000/welcome.html
+```
+
+Replace the image at `public/images/placeholder.svg` with your own files and use `/images/your-image.png` in the markup to show them.
+
 ## React component
 
 A reusable React component is available at `src/components/BarMenu.tsx` (with styles in `src/components/BarMenu.module.css`). Example usage in a React + TypeScript app:
