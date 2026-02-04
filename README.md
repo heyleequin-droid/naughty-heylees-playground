@@ -43,3 +43,14 @@ python3 -m http.server --directory public 8000
 ---
 
 If you want, drop your images in `public/images` now and I can commit them for you, or I can add a small Express static route to serve images automatically. Let me know which you prefer.
+
+## Bar menu demo
+
+A simple static demo is available at `public/bar.html`. To preview locally, run a quick static server from the project root and open the page in your browser:
+
+```bash
+python3 -m http.server --directory public 8000
+# then open http://localhost:8000/bar.html
+```
+
+Or use `npx serve public`.

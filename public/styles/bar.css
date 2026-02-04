@@ -1,0 +1,35 @@
+.bar-menu {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  width: 260px;
+  background: rgba(0, 0, 0, 0.75);
+  border: 2px solid gold;
+  border-radius: 12px;
+  padding: 16px;
+  color: white;
+  font-family: "Playfair Display", serif;
+  backdrop-filter: blur(8px);
+}
+
+.bar-menu h2 {
+  text-align: center;
+  color: gold;
+  margin-bottom: 12px;
+}
+
+.menu-section h3 {
+  color: #ffb347;
+  margin-top: 10px;
+}
+
+.menu-section ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.menu-section li {
+  padding: 4px 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
