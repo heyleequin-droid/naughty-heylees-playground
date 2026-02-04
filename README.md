@@ -1,5 +1,7 @@
 # naughty-heylees-playground
 
+[![Coverage](https://codecov.io/gh/heyleequin-droid/naughty-heylees-playground/branch/main/graph/badge.svg)](https://codecov.io/gh/heyleequin-droid/naughty-heylees-playground)
+
 Minimal TypeScript project (ES modules).
 
 ## Images
@@ -77,6 +79,15 @@ ReactDOM.createRoot(document.getElementById('root')!).render(<App />);
 
 Notes:
 - The component uses the built-in `barMenu` data from `src/barMenu.ts` by default. Pass a custom `menu` prop if you want to override it.
+
+### Coverage & Codecov
+
+CI runs tests with coverage and will upload coverage artifacts. If you want Codecov reports and badges:
+
+- Add the `CODECOV_TOKEN` secret to your repository (Settings → Secrets) if your repo is private. For public repos the Codecov action typically works without a token.
+- The CI step will upload `coverage/lcov.info` to Codecov when the secret is present and display results on https://codecov.io.
+
+Coverage thresholds are enforced by `scripts/checkCoverage.js` (defaults: statements/lines/functions 80%, branches 75%). Edit `scripts/checkCoverage.js` to change thresholds.
 
 ### Run the Vite demo
 
