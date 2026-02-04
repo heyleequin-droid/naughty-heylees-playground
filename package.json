@@ -11,7 +11,9 @@
     "build": "npm run build:client && npm run build:server",
     "preview": "vite preview --port 5173",
     "start": "node dist/server/server.js",
-    "test": "vitest"
+    "test": "vitest",
+    "test:coverage": "vitest run --coverage --run",
+    "check-coverage": "node scripts/checkCoverage.js"
   },
   "vitest": {
     "setupFiles": ["src/setupTests.ts"],
