@@ -54,3 +54,27 @@ python3 -m http.server --directory public 8000
 ```
 
 Or use `npx serve public`.
+
+## React component
+
+A reusable React component is available at `src/components/BarMenu.tsx` (with styles in `src/components/BarMenu.module.css`). Example usage in a React + TypeScript app:
+
+```tsx
+import React from 'react';
+import ReactDOM from 'react-dom/client';
+import BarMenu from './components/BarMenu';
+
+function App() {
+  return (
+    <div>
+      <BarMenu />
+    </div>
+  );
+}
+
+ReactDOM.createRoot(document.getElementById('root')!).render(<App />);
+```
+
+Notes:
+- The component uses the built-in `barMenu` data from `src/barMenu.ts` by default. Pass a custom `menu` prop if you want to override it.
+- This repo doesn't include React itself — add the component into your existing React project or set up a simple app with Vite.
