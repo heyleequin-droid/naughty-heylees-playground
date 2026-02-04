@@ -1,5 +1,7 @@
 # naughty-heylees-playground
 
+<p align="left"><img src="public/logo.svg" width="80" alt="Naughty HeyLee Playground logo" /></p>
+
 [![Coverage](https://codecov.io/gh/heyleequin-droid/naughty-heylees-playground/branch/main/graph/badge.svg)](https://codecov.io/gh/heyleequin-droid/naughty-heylees-playground) [![CI](https://github.com/heyleequin-droid/naughty-heylees-playground/actions/workflows/ci.yml/badge.svg)](https://github.com/heyleequin-droid/naughty-heylees-playground/actions)
 
 Minimal TypeScript project (ES modules).
