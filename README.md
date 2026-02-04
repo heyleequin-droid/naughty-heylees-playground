@@ -77,4 +77,18 @@ ReactDOM.createRoot(document.getElementById('root')!).render(<App />);
 
 Notes:
 - The component uses the built-in `barMenu` data from `src/barMenu.ts` by default. Pass a custom `menu` prop if you want to override it.
-- This repo doesn't include React itself — add the component into your existing React project or set up a simple app with Vite.
+
+### Run the Vite demo
+
+This repo now includes a tiny Vite + React demo. To run it locally:
+
+```bash
+# install dependencies
+npm install
+
+# start the dev server for the client
+npm run dev
+# open http://localhost:5173
+```
+
+The server files remain in `src/index.ts` if you prefer to run a backend concurrently (use `npm run dev:server`).
