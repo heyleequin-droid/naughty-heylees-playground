@@ -22,5 +22,5 @@ jobs:
         run: npx tsc --noEmit
       - name: Build client and server
         run: npm run build
-      - name: Run unit tests (if any)
-        run: npx vitest run || true
+      - name: Run unit tests
+        run: npx vitest run --run
